@@ -2,9 +2,30 @@
 <html>
     <head>
         <title>New Tab</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This extension will change chromes default 'New Tab' page and display Custom page.">
         <link href="style.css" rel="stylesheet"/>
     </head>
     <body>
-        New Tab Customization int.
+        <div class="extension-container">
+            <div class="google">
+                <div class="content">
+                    <img src="images/google-logo.svg" alt="Google logo" class="google-logo">
+                    <form action="https://google.com/search" method="get">
+                        <img src="/images/search.svg" class="search-icon" alt="search icon">
+                        <input type="text" name="q" placeholder="Search anything || Best Results"  class="search-query" name="test">
+                    </form>
+                </div>
+            </div>
+            <div class="duckduckgo">
+                <div class="content">
+                    <img src="images/duckduckgo-logo.svg" alt="DuckDuckGo logo" class="duckduckgo-logo">
+                    <form action="https://duckduckgo.com/" method="post">
+                        <img src="/images/search.svg" class="search-icon" alt="search icon">
+                        <input type="text" placeholder="Search anything || Best Privacy" name="q"  autocomplete="off" class="search-query">
+                    </form>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
